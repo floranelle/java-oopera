@@ -25,6 +25,8 @@ public class Show {
     public void addActor(Actor actor) {
         if (!listOfActors.contains(actor)) {
             listOfActors.add(actor);
+        } else {
+            System.out.println("Актёр " + actor + " уже есть в составе спектакля.");
         }
     }
 
