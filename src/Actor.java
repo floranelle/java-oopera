@@ -24,12 +24,12 @@ public class Actor extends Person {
 
         Actor other = (Actor) obj;
         return height == other.height
-                && Objects.equals(getName(), other.getName())
-                && Objects.equals(getSurname(), other.getSurname());
+                && Objects.equals(name, other.name)
+                && Objects.equals(surname, other.surname);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getName(), getSurname(), height);
+        return Objects.hash(name, surname, height);
     }
 }
